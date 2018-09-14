@@ -9,13 +9,13 @@ const authIndexPage = (props) => (
   </div>
 );
 
-authIndexPage.getInitialProps = context => {
-  const promise = new Promise((resolve, reject) => {
+authIndexPage.getInitialProps = () => {
+  const promise = new Promise((resolve) => {
     setTimeout(() => {
-      resolve({appName: 'Super App (Auth)'})
+      resolve({ appName: 'Super App (Auth)' });
     }, 1000);
   });
   return promise;
-}
+};
 
 export default authIndexPage;

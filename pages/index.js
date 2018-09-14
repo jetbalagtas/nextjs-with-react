@@ -5,7 +5,7 @@ import Router from 'next/router';
 class IndexPage extends Component {
   // this method executes either on the server or client (depending on page click or typing a url)
   // you can use this to initialize your app before it loads
-  // for example, you can get data from a database then prepopulate the props that the render method will receive for the page component 
+  // for example, you can get data from a database then prepopulate the props that the render method will receive for the page component
   // static async getInitialProps(context) {
   //   console.log(context);
   //   // await keyword (if fetching with axios, for example)
@@ -15,7 +15,7 @@ class IndexPage extends Component {
     console.log(context);
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve({appName: 'Super App'})
+        resolve({ appName: 'Super App' });
       }, 1000);
     });
     return promise;
